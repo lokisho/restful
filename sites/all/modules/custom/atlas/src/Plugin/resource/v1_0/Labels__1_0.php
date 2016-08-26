@@ -33,4 +33,44 @@ use Drupal\restful\Plugin\resource\ResourceNode;
  */
 class Labels__1_0 extends ResourceNode {
 
+  /**
+   * {@inheritdoc}
+   */
+  protected function publicFields() {
+    $public_fields = parent::publicFields();
+
+    // Rename label to name.
+    $public_fields['name'] = $public_fields['label'];
+    unset($public_fields['label']);
+
+    $public_fields['history'] = array(
+      'property' => 'body',
+      // Uncomment to get only value.
+//      'sub_property' => 'value',
+      // Uncomment to process the value before to be sent.
+//      'process_callbacks' => array(
+//        'strip_tags',
+//        array($this, 'replaceT'),
+//      ),
+
+    );
+    $public_fields['artists'] = array('property' => 'field_managed_artists');
+    $public_fields['bands'] = array('property' => 'field_managed_bands');
+
+    return $public_fields;
+  }
+
+  /**
+   * Replaces t by T.
+   *
+   * @param string $value
+   *   Value to be replaced
+   *
+   * @return string
+   *   Value processed.
+   */
+  public function replaceT ($value) {
+    return str_replace("t", "T", $value);
+  }
+
 }
