@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/sites/all/modules/contrib/plug/lib/Symfony/yaml" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sites/all/modules/contrib/plug/lib/Symfony/validator" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sites/all/modules/contrib/registry_autoload/tests/modules/registry_autoload_test/sites/all/libraries/test-library/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sites/all/modules/contrib/plug/lib/doctrine/common/tests/Doctrine/Tests/Common" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sites/all/modules/contrib/plug/lib/doctrine/collections/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/sites/all/modules/contrib/plug/lib/doctrine/inflector/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/sites/all/modules/contrib/plug/lib/doctrine/common/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/sites/all/modules/contrib/plug/lib/doctrine/cache/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/sites/all/modules/contrib/plug/lib/doctrine/common/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sites/all/modules/contrib/plug/lib/doctrine/lexer/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sites/all/modules/contrib/plug/lib/doctrine/cache/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sites/all/modules/contrib/plug/lib/doctrine/collections/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sites/all/modules/contrib/plug/lib/doctrine/inflector/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sites/all/modules/contrib/plug/lib/doctrine/annotations/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sites/all/modules/contrib/registry_autoload/tests/modules/registry_autoload_test/sites/all/libraries/test-library/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sites/all/modules/contrib/registry_autoload/tests/modules/registry_autoload_test" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sites/all/modules/contrib/plug/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/simpletest/tests/psr_0_test/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sites/all/modules/contrib/plug/modules/plug_example/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sites/all/modules/contrib/registry_autoload/tests/modules/registry_autoload_test/lib" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/modules/simpletest/lib" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="PHP">
+        <CLASSES>
+          <root url="file:///usr/local/php5/lib/php" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file:///usr/local/php5/lib/php" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+  </component>
+</module>
