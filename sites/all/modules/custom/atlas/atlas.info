@@ -1,0 +1,8 @@
+name = Atlas (Restful Tutorial API)
+description = Contains the resources for the tutorial
+core = 7.x
+package = Tutorials
+
+dependencies[] = restful
+
+registry_autoload[] = PSR-4
