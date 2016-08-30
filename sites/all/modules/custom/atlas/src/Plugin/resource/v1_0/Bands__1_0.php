@@ -10,20 +10,20 @@ namespace Drupal\atlas\Plugin\resource\v1_0;
 use Drupal\restful\Plugin\resource\ResourceNode;
 
 /**
- * Class People__1_0
+ * Class Bands__1_0
  * @package Drupal\atlas\Plugin\resource
  *
  * @Resource(
- *   name = "people:1.0",
- *   resource = "people",
- *   label = "people",
+ *   name = "bands:1.0",
+ *   resource = "bands",
+ *   label = "bands",
  *   description = "Export the Person content type.",
  *   authenticationTypes = TRUE,
  *   authenticationOptional = TRUE,
  *   dataProvider = {
  *     "entityType": "node",
  *     "bundles": {
- *       "person"
+ *       "band"
  *     }
  *   },
  *   formatter = "json_api",
@@ -31,7 +31,7 @@ use Drupal\restful\Plugin\resource\ResourceNode;
  *   minorVersion = 0
  * )
  */
-class People__1_0 extends ResourceNode {
+class Bands__1_0 extends ResourceNode {
 
   /**
    * {@inheritdoc}
@@ -39,11 +39,18 @@ class People__1_0 extends ResourceNode {
   protected function publicFields() {
     $public_fields = parent::publicFields();
 
-    $public_fields['commonName'] = $public_fields['label'];
+    $public_fields['name'] = $public_fields['label'];
     unset($public_fields['label']);
-    $public_fields['firstName'] =  array('property' => 'field_first_name');
-    $public_fields['middelName'] = array('property' => 'field_middle_name');
-    $public_fields['lastName'] = array('property' => 'field_last_name');
+    $public_fields['biography'] =  array('property' => 'body');
+    $public_fields['members'] = array(
+      'property' => 'field_members',
+      'resource' => array(
+        'name' => 'people',
+        'majorVersion' => 1,
+        'minorVersion' => 0,
+      ),
+    );
+
 
     return $public_fields;
   }

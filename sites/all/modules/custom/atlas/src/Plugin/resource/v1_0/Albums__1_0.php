@@ -10,31 +10,28 @@ namespace Drupal\atlas\Plugin\resource\v1_0;
 use Drupal\restful\Plugin\resource\ResourceNode;
 
 /**
- * Class People__1_0
+ * Class Albums__1_0
  * @package Drupal\atlas\Plugin\resource
  *
  * @Resource(
- *   name = "people:1.0",
- *   resource = "people",
- *   label = "people",
+ *   name = "albums:1.0",
+ *   resource = "albums",
+ *   label = "albums",
  *   description = "Export the Person content type.",
  *   authenticationTypes = TRUE,
  *   authenticationOptional = TRUE,
  *   dataProvider = {
  *     "entityType": "node",
  *     "bundles": {
- *       "person"
- *     },
- *    "sort"= {
- *      "commonName" = "DESC"
- *    }
+ *       "album"
+ *     }
  *   },
  *   formatter = "json_api",
  *   majorVersion = 1,
  *   minorVersion = 0
  * )
  */
-class People__1_0 extends ResourceNode {
+class Albums__1_0 extends ResourceNode {
 
   /**
    * {@inheritdoc}
@@ -42,11 +39,10 @@ class People__1_0 extends ResourceNode {
   protected function publicFields() {
     $public_fields = parent::publicFields();
 
-    $public_fields['commonName'] = $public_fields['label'];
+    $public_fields['name'] = $public_fields['label'];
     unset($public_fields['label']);
-    $public_fields['firstName'] =  array('property' => 'field_first_name');
-    $public_fields['middelName'] = array('property' => 'field_middle_name');
-    $public_fields['lastName'] = array('property' => 'field_last_name');
+    $public_fields['sells'] =  array('property' => 'field_sells');
+    $public_fields['year'] = array('property' => 'field_publication_year');
 
     return $public_fields;
   }

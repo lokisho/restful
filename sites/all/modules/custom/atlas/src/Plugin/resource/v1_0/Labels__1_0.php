@@ -54,8 +54,22 @@ class Labels__1_0 extends ResourceNode {
 //      ),
 
     );
-    $public_fields['artists'] = array('property' => 'field_managed_artists');
-    $public_fields['bands'] = array('property' => 'field_managed_bands');
+    $public_fields['artists'] = array(
+      'property' => 'field_managed_artists',
+      'resource' => array(
+        'name' => 'people',
+        'majorVersion' => 1,
+        'minorVersion' => 0,
+      ),
+      );
+    $public_fields['bands'] = array(
+      'property' => 'field_managed_bands',
+      'resource' => array(
+      'name' => 'bands',
+      'majorVersion' => 1,
+      'minorVersion' => 0,
+    ),
+    );
 
     return $public_fields;
   }
