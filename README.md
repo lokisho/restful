@@ -56,6 +56,13 @@ http://jsonapi.org/format/#fetching-pagination
 ###Examples
 /atlas/people?page[size]=10 --default = 50
 
+#Troubleshooting
+If you get into errors such as `404` or `403` when switching between branches, you could try `drush rr` & `drush cc all`
+
+#Resources
+* **RESTful respository**
+https://github.com/RESTful-Drupal/restful/wiki
+
 #Acknowledgements
 
-This example is developed based on the [video tutorials](https://www.youtube.com/playlist?list=PLZOQ_ZMpYrZv8_c7jd_CkO_93-DnyVFY5) by [Mateu Aguilo](https://www.drupal.org/project/restful) who is the maintainer of [RESTful](https://www.drupal.org/project/restful) module
+This example is developed based on the [video tutorials](https://www.youtube.com/playlist?list=PLZOQ_ZMpYrZv8_c7jd_CkO_93-DnyVFY5) by [Mateu Aguilo](https://github.com/e0ipso) who is the maintainer of [RESTful](https://www.drupal.org/project/restful) module
