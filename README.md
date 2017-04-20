@@ -10,10 +10,10 @@ This develops an example of [RESTful](https://www.drupal.org/project/restful) mo
  
 # Examples of [json_api](http://jsonapi.org) requests
 
-##Including of Related Resources
+## Including of Related Resources
 http://jsonapi.org/format/#fetching-includes
 
-###Examples
+### Examples
 * **Fetching one level entites**
 /atlas/labels?include=artists,bands
 * **Fetching two level entities**
